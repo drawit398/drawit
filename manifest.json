@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+  
+    "name": "drawit",
+    "description": "Draws on top of webpages.",
+    "version": "1.0",
+  
+    "icons": {
+      "16": "/images/drawit16.png",
+      "32": "/images/drawit32.png",
+      "64": "/images/drawit64.png" 
+    },
+  
+    "permissions": [
+      "tabs", "<all_urls>"
+    ],
+  
+    "browser_action": {
+      "default_icon": {
+      "16": "/images/drawit16.png",
+      "32": "/images/drawit32.png",
+      "64": "/images/drawit64.png"
+      },
+      "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}
